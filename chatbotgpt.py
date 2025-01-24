@@ -48,3 +48,14 @@ option = st.selectbox(
      ('gpt-3.5-turbo', 'gpt-3.5-turbo-instruct', 'gpt-3.5-turbo-1106','gpt-3.5-turbo-0125'))
 
 st.write('What is your GPT model?', option)
+
+from datetime import time, datetime
+
+st.header('st.slider')
+
+# Example 1
+
+st.subheader('Token Limit Slider')
+
+max_tokens = st.slider('Select the maximum number of tokens for GPT generation', 0, 500, 100)
+st.write("Maximum tokens selected:", max_tokens)
